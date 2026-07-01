@@ -1,0 +1,703 @@
+/* ===========================
+   SJMME Professional Theme
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef2f7;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+.top-header{
+
+    background:#002b5c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.top-header h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    font-size:20px;
+
+    color:#d9e8ff;
+
+    margin-bottom:30px;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+    margin-top:20px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#f0b323;
+
+    color:#000;
+
+    padding:14px 28px;
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    font-weight:bold;
+
+    margin:10px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#ffc93c;
+
+}
+
+.btn-secondary{
+
+    background:white;
+
+}
+
+.btn-secondary:hover{
+
+    background:#ddd;
+
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+nav{
+    background:#004b91;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:0;
+    padding:18px;
+}
+
+nav li{
+    margin:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 16px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#f0b323;
+    color:#002b5c;
+}
+
+/* Hero */
+
+.hero{
+
+    height:450px;
+
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.hero h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/* Sections */
+
+section{
+
+    background:white;
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    padding:35px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+section h2{
+
+    color:#002b5c;
+
+    margin-bottom:18px;
+
+    border-left:6px solid #f0b323;
+
+    padding-left:12px;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#002b5c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:60px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.top-header h1{
+
+font-size:30px;
+
+}
+
+.hero{
+
+height:300px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+nav a{
+
+display:block;
+
+padding:10px;
+
+}
+
+.btn{
+
+display:block;
+
+margin:15px auto;
+
+width:220px;
+
+}
+
+}
+/* Journal Statistics */
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+.stat-box{
+
+background:#004b91;
+
+color:white;
+
+padding:30px;
+
+border-radius:10px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.stat-box h3{
+
+margin-bottom:15px;
+
+}
+
+.stat-box p{
+
+font-size:26px;
+
+font-weight:bold;
+
+}
+
+/* Articles */
+
+.article-card{
+
+background:#f4f7fb;
+
+padding:25px;
+
+margin:20px 0;
+
+border-left:6px solid #f0b323;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.article-card:hover{
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+transform:translateY(-4px);
+
+}
+
+/* ===========================
+   Journal Logo
+=========================== */
+
+.journal-logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.logo-circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#f0b323;
+    color:#002b5c;
+    font-size:34px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.journal-info{
+    color:#d7e5ff;
+    margin-top:10px;
+    font-size:15px;
+}
+/* ===========================
+   Official SJMME Logo
+=========================== */
+
+.journal-logo-img{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.journal-logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.journal-emblem{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    filter:drop-shadow(0 5px 12px rgba(0,0,0,.35));
+}
+
+/* ===========================
+   Professional Footer
+=========================== */
+
+footer{
+    background:#002b5c;
+    color:white;
+    margin-top:60px;
+    padding:50px 20px 20px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-column h3{
+    color:#f0b323;
+    margin-bottom:15px;
+}
+
+.footer-column p{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+.footer-column ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-column li{
+    margin-bottom:10px;
+}
+
+.footer-column a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-column a:hover{
+    color:#f0b323;
+}
+
+footer hr{
+    margin:40px auto 20px;
+    border:1px solid rgba(255,255,255,.2);
+    max-width:1200px;
+}
+
+.copyright{
+    text-align:center;
+    font-size:15px;
+}
+
+/* ===========================
+   Official Journal Emblem
+=========================== */
+
+.journal-emblem{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    flex-shrink:0;
+    filter:drop-shadow(0 6px 14px rgba(0,0,0,.25));
+}
+
+/* ===========================
+   Latest Issue Section
+=========================== */
+
+.latest-issue{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+.issue-image{
+    flex:1;
+    min-width:250px;
+    text-align:center;
+}
+
+.issue-image img{
+    width:250px;
+    max-width:100%;
+    border-radius:8px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.issue-content{
+    flex:2;
+    min-width:300px;
+}
+
+.issue-label{
+    display:inline-block;
+    background:#f0b323;
+    color:#002b5c;
+    padding:8px 18px;
+    border-radius:25px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.issue-content h2{
+    color:#002b5c;
+    margin-bottom:20px;
+    font-size:34px;
+}
+
+.issue-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.issue-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* ===========================
+   Article Buttons
+=========================== */
+
+.article-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.article-card p{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   Why Choose SJMME
+=========================== */
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.feature-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:0.3s ease;
+    border-top:5px solid #f0b323;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.feature-card h3{
+    color:#002b5c;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* ===========================
+   Indexing & Abstracting
+=========================== */
+
+.indexing{
+    text-align:center;
+}
+
+.indexing-intro{
+    max-width:800px;
+    margin:20px auto 40px;
+    font-size:17px;
+    color:#555;
+}
+
+.indexing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.index-card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:10px;
+    border:2px solid #e5e5e5;
+    transition:0.3s;
+}
+
+.index-card:hover{
+    border-color:#f0b323;
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.index-card h3{
+    color:#002b5c;
+    margin-bottom:10px;
+}
+
+.index-card p{
+    color:#666;
+}
+
+/* ===========================
+   Editor Message
+=========================== */
+
+.editor-message{
+    background:#ffffff;
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+    padding:45px;
+    border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.editor-container{
+    display:flex;
+    gap:45px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.editor-photo{
+    flex:1;
+    text-align:center;
+}
+
+.editor-photo img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #f0b323;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.editor-content{
+    flex:2;
+}
+
+.editor-content h3{
+    color:#002b5c;
+    margin-top:25px;
+    margin-bottom:5px;
+}
+
+.editor-content p{
+    line-height:1.9;
+    margin-bottom:18px;
+}
